@@ -29,12 +29,14 @@ public class Principal {
         filme2.setAnoDeLancamento(2023);
         filme2.setDuracaoEmMinutos(180);
 
-        Filme filme3 = new Filme("Pokemon1");
+        Filme filme3 = new Filme("Pokemon 1");
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(filme1);
         calculadora.inclui(filme2);
         System.out.println(calculadora.getTempoTotal());
+
+        Filme filme4 = new Filme("Digimon 1");
 
         Serie kimetsu = new Serie();
 
@@ -71,10 +73,19 @@ public class Principal {
 
         listaDeFilmes.add(filme1);
         listaDeFilmes.add(filme2);
+        listaDeFilmes.add(filme3);
+        listaDeFilmes.add(filme4);
         System.out.println(listaDeFilmes.get(0).getNome());
         System.out.println(listaDeFilmes.size());
         System.out.println(listaDeFilmes.toString());
         System.out.println(listaDeFilmes.get(0).toString());
+        System.out.println("_____________________________________________________________");
+
+        System.out.println("Lista de Filme completa");
+
+        for (Filme filme : listaDeFilmes){
+            System.out.println(filme.getNome());
+        }
 
 
     }
