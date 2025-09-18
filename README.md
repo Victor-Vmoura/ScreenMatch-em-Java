@@ -1,7 +1,3 @@
-Claro\! Com base no código da sua classe `Principal`, preparei um README que explica o propósito do projeto, os conceitos de Orientação a Objetos que ele demonstra e como executá-lo.
-
------
-
 # 🎬 ScreenMatch: Fundamentos de Orientação a Objetos em Java
 
 ## 📝 Sobre o Projeto
