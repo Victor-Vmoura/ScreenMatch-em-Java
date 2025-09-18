@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme filme1 = new Filme("Star Wars");
+        Filme filme1 = new Filme("Star Wars", 2000);
        //filme1.setNome("Star Wars");
-        filme1.setAnoDeLancamento(2000);
+        //filme1.setAnoDeLancamento(2000);
         filme1.setDuracaoEmMinutos(120);
 
         //Métodos de String (quando eu puxo o nome da variavel o metodo vem no proximo pontoSystem.out.println(filme1.nome.length())
@@ -24,23 +24,23 @@ public class Principal {
         //filme1.exibeFichaTecnica();
         //System.out.println("O total de avaliações é de :" + filme1.getTotalAvaliacoes());
 
-        Filme filme2 = new Filme("Avatar");
+        Filme filme2 = new Filme("Avatar", 2023);
         //filme2.setNome("Avatar");
-        filme2.setAnoDeLancamento(2023);
+        //filme2.setAnoDeLancamento(2023);
         filme2.setDuracaoEmMinutos(180);
 
-        Filme filme3 = new Filme("Pokemon 1");
+        Filme filme3 = new Filme("Pokemon 1", 2000);
+        Filme filme4 = new Filme("Digimon 1", 2001);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(filme1);
         calculadora.inclui(filme2);
         System.out.println(calculadora.getTempoTotal());
 
-        Filme filme4 = new Filme("Digimon 1");
 
-        Serie kimetsu = new Serie();
+        Serie kimetsu = new Serie("Kimetsu no Yaba", 2019);
 
-        kimetsu.setNome("Kimetsu no Yaba");
+        //kimetsu.setNome("Kimetsu no Yaba");
         kimetsu.setEpisodiosPorTemporada(10);
         kimetsu.setTemporadas(3);
         kimetsu.setMinutosPorEpisodio(25);
@@ -48,9 +48,9 @@ public class Principal {
         System.out.println("Duração total da série: " + kimetsu.getDuracaoEmMinutos());
 
 
-        Serie jujutsu = new Serie();
+        Serie jujutsu = new Serie("Jujutsu", 2019);
 
-        jujutsu.setNome("Jujutsu");
+        //jujutsu.setNome("Jujutsu");
         jujutsu.setEpisodiosPorTemporada(24);
         jujutsu.setTemporadas(2);
         jujutsu.setMinutosPorEpisodio(24);
