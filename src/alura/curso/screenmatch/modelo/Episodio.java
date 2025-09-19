@@ -2,11 +2,12 @@ package alura.curso.screenmatch.modelo;
 
 import alura.curso.screenmatch.calculos.classificavel;
 
-public class Episodio extends Serie implements classificavel {
+public class Episodio implements classificavel {
     private int numero;
     private String nome;
     private String serie;
     private int totalDeAvaliações;
+
 
     public int getTotalDeAvaliações() {
         return totalDeAvaliações;

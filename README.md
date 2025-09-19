@@ -10,7 +10,7 @@ O objetivo principal é prático: calcular o tempo total necessário para marato
 
 ## 🧱 Conceitos de POO Demonstrados
 
-O código na classe `Principal` e em suas dependências ilustra os seguintes conceitos:
+O código na classe `alura.curso.screenmatch.Principal.Principal` e em suas dependências ilustra os seguintes conceitos:
 
 * **Abstração e Modelagem:**
 
@@ -48,12 +48,12 @@ A organização do código em pacotes, inferida pelos `imports`, segue as boas p
 │       ├── Episodio.java
 │       ├── Filme.java
 │       └── Serie.java
-└── Principal.java
+└── alura.curso.screenmatch.Principal.Principal.java
 ```
 
 * **`modelo`**: Contém as classes que representam os dados da aplicação.
 * **`calculos`**: Contém as classes com a lógica de negócio e operações sobre os modelos.
-* **`Principal.java`**: O ponto de entrada da aplicação, responsável por criar os objetos e orquestrar as ações.
+* **`alura.curso.screenmatch.Principal.Principal.java`**: O ponto de entrada da aplicação, responsável por criar os objetos e orquestrar as ações.
 
 -----
 
@@ -73,18 +73,18 @@ Para executar esta aplicação, você só precisa do Kit de Desenvolvimento Java
 
 2.  **Navegue até o diretório raiz (`src`):**
 
-    * Abra o terminal e navegue até a pasta que contém o diretório `alura` e o arquivo `Principal.java`.
+    * Abra o terminal e navegue até a pasta que contém o diretório `alura` e o arquivo `alura.curso.screenmatch.Principal.Principal.java`.
 
 3.  **Compile todos os arquivos Java:**
 
     ```bash
-    javac alura/curso/screenmatch/modelo/*.java alura/curso/screenmatch/calculos/*.java Principal.java
+    javac alura/curso/screenmatch/modelo/*.java alura/curso/screenmatch/calculos/*.java alura.curso.screenmatch.Principal.Principal.java
     ```
 
-4.  **Execute a classe `Principal`:**
+4.  **Execute a classe `alura.curso.screenmatch.Principal.Principal`:**
 
     ```bash
-    java Principal
+    java alura.curso.screenmatch.Principal.Principal
     ```
 
 5.  **Pronto\!** ✨ A saída do programa, com os cálculos de tempo e as listas de filmes, será exibida no console.
