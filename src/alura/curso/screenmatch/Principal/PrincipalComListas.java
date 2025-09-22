@@ -4,7 +4,7 @@ import alura.curso.screenmatch.modelo.Filme;
 import alura.curso.screenmatch.modelo.Serie;
 import alura.curso.screenmatch.modelo.Titulo;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class PrincipalComListas {
         Serie kimetsu = new Serie("Kimetsu no Yaba", 2019);
         Serie jujutsu = new Serie("Jujutsu", 2019);
 
-        ArrayList<Titulo> listadeAssistidos = new ArrayList<>();
+        List<Titulo> listadeAssistidos = new LinkedList<>();
 
         listadeAssistidos.add(filme1);
         listadeAssistidos.add(filme2);
@@ -45,5 +45,22 @@ public class PrincipalComListas {
 
             }
         }
+
+        List<String> buscaPorArtista = new LinkedList<>();
+        buscaPorArtista.add("Victor");
+        buscaPorArtista.add("Yasmin");
+        buscaPorArtista.add("Rose");
+        buscaPorArtista.add("Gregorio");
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Lista ordenada" + buscaPorArtista);
+        Collections.sort(listadeAssistidos);
+        System.out.println("Lista ordenada" + listadeAssistidos);
+
+        //Estudar o Comparator!!!!
+        listadeAssistidos.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+
+        System.out.println("Organizado por ano de lançamento: " + listadeAssistidos);
+
     }
 }
