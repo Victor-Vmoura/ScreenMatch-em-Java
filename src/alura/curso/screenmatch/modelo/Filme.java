@@ -23,4 +23,9 @@ public class Filme extends Titulo implements classificavel {
     public String toString() {
         return "Filme: " + this.getNome() + " (" + getAnoDeLancamento() + ")";
     }
+
+    @Override
+    public int compareTo(Titulo o) {
+        return 0;
+    }
 }

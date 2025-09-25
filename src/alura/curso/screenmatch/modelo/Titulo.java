@@ -1,7 +1,19 @@
 package alura.curso.screenmatch.modelo;
 
-public class Titulo {
+import com.google.gson.annotations.SerializedName;
+
+public class Titulo implements Comparable<Titulo> {
+    @SerializedName("Title")
     private String nome;
+
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'' +
+                ", anoDeLancamento=" + anoDeLancamento;
+
+    }
+
+    @SerializedName("Year")
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
     private double somaAvaliacoes;
@@ -69,5 +81,10 @@ public class Titulo {
 
     double pegaMedia(){
         return somaAvaliacoes/ totalAvaliacoes;
+    }
+
+    @Override
+    public int compareTo(Titulo o) {
+        return 0;
     }
 }
